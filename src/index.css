@@ -62,12 +62,17 @@ input {
 }
 
 .delete-button {
-  visibility: hidden;
   position: absolute;
   right: 0;
   top: 10px;
 }
 
-.todo-item:hover .delete-button {
-  visibility: visible;
+@media only screen and (min-width: 1400px) {
+  .delete-button {
+    visibility: hidden;
+  }
+
+  .todo-item:hover .delete-button {
+    visibility: visible;
+  }
 }
