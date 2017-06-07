@@ -20,7 +20,7 @@ export default class MainSection extends Component {
     const { todos, actions } = this.props
     return (
       <section>
-        <ul>
+        <ul className="todo-list">
           {this.renderTodoItem(todos, actions)}
         </ul>
       </section>

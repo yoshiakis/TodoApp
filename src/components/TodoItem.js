@@ -51,12 +51,13 @@ export default class TodoItem extends Component {
       )
     }
     return (
-      <li>
-        <span className="todo-list"
+      <li className="todo-item">
+        <span className="todo-item-text"
               onClick={this.handleTextClick}>
           {text}
         </span>
-        <button onClick={this.handleButtonClick}>
+        <button className="delete-button"
+                onClick={this.handleButtonClick}>
           ×
         </button>
       </li>
